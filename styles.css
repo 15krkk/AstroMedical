@@ -38,19 +38,11 @@
   margin-bottom: 1rem;
 }
 
-.product__subtitle {
-  font-size: 1rem;
-  color: var(--text-dark);
-  max-width: calc(var(--max-width)*(3/4));
-}
-
 .section__subtitle {
   font-size: 1rem;
   color: var(--text-dark);
   max-width: calc(var(--max-width) / 2);
 }
-
-
 
 .btn {
   padding: 0.75rem 2rem;
@@ -533,13 +525,11 @@ header {
 }
 
 @media (width < 900px) {
-  .nav__links {
-    display: none;
-  }
-
   .header__container {
     grid-template-columns: repeat(1, 1fr);
+    padding-top: 10vh;
   }
+
   .header__image {
     min-height: 500px;
   }
@@ -590,13 +580,71 @@ header {
 
 
 
+/* Style for the hamburger button */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 900px) {
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav__links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+    .nav__links .link {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ddd; /* Adds a separator line */
+  }
+
+  .nav__links .link:last-child {
+    border-bottom: none; /* Removes line from last item */
+  }
+}
+
+
+header.menu-open {
+  margin-top: 325px; /* Adjust the value as needed */
+  transition: margin-top 0.3s ease;
+}
+
+
+
+
+
+
+
 
 
 
 
 .info-section {
   display: flex;
-  height: 60vh;
+  height: auto;
   width: 100%;
   background-color: #ffffff;
 }
@@ -743,7 +791,7 @@ header {
 
 
 
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
   .info-section {
       flex-direction: column;
       height: auto;
@@ -807,7 +855,7 @@ header {
 
 .gallary {
   position: relative;
-  background: url('assets/medical-safety-background2.jpg') no-repeat center center/cover;
+  background: url('assets/constructionsafetyheader.jpg') no-repeat center center/cover;
 }
 
 .gallary::before{
@@ -829,7 +877,7 @@ header {
 
 .info-section {
   position: relative;
-  background: url('assets/medical-safety-background2.jpg') no-repeat center center/cover;
+  background: url('assets/constructionsafetyheader.jpg') no-repeat center center/cover;
 }
 
 .info-section::before {
@@ -922,6 +970,7 @@ header {
     height: 25px;
   }
 }
+
 
 
 
