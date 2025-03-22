@@ -11,45 +11,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
     <title>Astro International</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
   </head>
   <body>
-    <div id="particles-js"></div>
+
+
     <nav>
-      <button class="hamburger" onclick="toggleMenu()">☰</button>
-      <div class="nav__logo"><img src="assets/logo.jpg"></div>
-      <ul class="nav__links">
-        <li class="link"><a href="#">Home</a></li>
-        <li class="link"><a href="#">About Us</a></li>
-        <li class="link"><a href="index2.html">Safety Services</a></li>
-        <li class="link"><a href="#">Reviews</a></li>
-        <li class="link"><a href="#">Contact Us</a></li>
-      </ul>
-      <!-- <button class="btn">Contact Us</button> -->
+      <div class="nav__container">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="nav__logo">
+          <img src="assets/logo.jpg" alt="Logo">
+        </div>
+        <ul class="nav__links">
+          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="#">About Us</a></li>
+          <li class="link"><a href="index2.html">Safety Services</a></li>
+          <li class="link"><a href="#">Reviews</a></li>
+          <li class="link"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
     </nav>
     <header>
       <div class="section__container header__container">
-        <div class="header__image">
+        <div data-aos="zoom-in" data-aos-duration="1400" class="header__image">
           <img src="assets/medical-safety-header-2.jpg" alt="header" />
           <img src="assets/medical-safety-header-1.jpg" alt="header" />
         </div>
         <div class="header__content">
           <div>
             <!-- <p class="sub__header">Reliable Safety Equipment for Every Industry</p> -->
-            <h1>Medical Safety Equipment - Protecting Lives with Astro International</h1>
-            <p class="section__subtitle">
+            <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">Medical Safety Equipment - Protecting Lives with Astro International</h1>
+            <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300" class="section__subtitle">
               At Astro International, we understand that safety isn't just about rules—it’s about protecting real people. Whether you're a doctor, nurse, technician, or caregiver, the right medical safety equipment makes all the difference.
             </p>
-            <div class="action__btns">
+            <div data-aos="flip-down" data-aos-duration="1400" data-aos-delay="300" class="action__btns">
               <button class="btn">Learn More</button>
-              <!-- <div class="story">
-                <div class="video__image">
-                  <img src="assets/story.jpg" alt="story" />
-                  <span><i class="ri-play-fill"></i></span>
-                </div>
-                <span>Watch our story</span>
-              </div> -->
             </div>
           </div>
         </div>
@@ -90,101 +89,988 @@
         <img src="assets/logo.jpg" alt="Workspace Image">
     </div>
   </div>
+  
 
-  <section class="product__container">
-    <section class="section__container destination__container">
-      <div class="section__header">
-        <div>
-          <h2 class="section__title">What We Offer</h2>
-          <p class="product__subtitle ">
-            We don't just sell products - we help create safer spaces for those who dedicate their lives to caring for others. Because at the end of the day, safety is personal.
-          </p>
+
+
+
+  <section class="product__category">
+    <div class="section__container product__category__container">
+      <h2 class="section__title">Products Category</h2>
+      <p class="section__subtitle">
+        Explore your suitable and dream places around the world. Here you can
+        find your right destination.
+      </p>
+      <div class="product__category__grid">
+        <div class="product__category__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__category__details">
+            <p>Category 1</p>
+            <div class="product__category__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
         </div>
-        <div class="destination__nav">
-          <span><i class="ri-arrow-left-s-line"></i></span>
-          <span><i class="ri-arrow-right-s-line"></i></span>
+        <div class="product__category__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__category__details">
+            <p>Category 1</p>
+            <div class="product__category__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="book__now">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__category__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__category__details">
+            <p>Category 1</p>
+            <div class="product__category__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="book__now">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__category__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__category__details">
+            <p>Category 1</p>
+            <div class="product__category__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="book__now">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__category__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__category__details">
+            <p>Category 1</p>
+            <div class="product__category__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="book__now">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__category__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__category__details">
+            <p>Category 1</p>
+            <div class="product__category__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="book__now">Know More</button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="destination__grid">
-        <div class="destination__card">
-          <img src="assets/protective-gear.jpg" alt="destination" />
-          <div class="destination__details">
-            <p class="destination__subtitle">Protective Gear</p>
-            <p class="destination__title">Masks, gloves, gowns, and face shields to keep you safe from infections</p>
-          </div>
-        </div>
-        <div class="destination__card">
-          <img src="assets/sanitization-essentials.jpg" alt="destination" />
-          <div class="destination__details">
-            <p class="destination__subtitle">Sanitization Essentials</p>
-            <p class="destination__title">Hospital-grade disinfectants, hand sanitizers, and surface cleaners for a germ-free environment</p>
-          </div>
-        </div>
-        <div class="destination__card">
-          <img src="assets/emergency-safety-tools.jpg" alt="destination" />
-          <div class="destination__details">
-            <p class="destination__subtitle">Emergency Safety Tools</p>
-            <p class="destination__title">First-aid kits, eyewash stations, and spill control solutions for quick response in critical moments</p>
-          </div>
-        </div>
-        <div class="destination__card">
-          <img src="assets/biohazard-waste-disposal.jpg" alt="destination" />
-          <div class="destination__details">
-            <p class="destination__subtitle">Biohazard Waste Disposal</p>
-            <p class="destination__title">Secure sharps containers and medical waste bins to keep surroundings safe and compliant</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </section>
 
-    <!-- <section class="trip">
-      <div class="section__container trip__container">
-        <h2 class="section__title">Best trip package</h2>
-        <p class="section__subtitle">
-          Explore your suitable and dream places around the world. Here you can
-          find your right destination.
-        </p>
-        <div class="trip__grid">
-          <div class="trip__card">
-            <img src="assets/trip-1.jpg" alt="trip" />
-            <div class="trip__details">
-              <p>Wasserwerk Frelberg, Germany</p>
-              <div class="rating"><i class="ri-star-fill"></i> 4.2</div>
-              <div class="booking__price">
-                <div class="price"><span>From</span> $300</div>
-                <button class="book__now">Book Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="trip__card">
-            <img src="assets/trip-2.jpg" alt="trip" />
-            <div class="trip__details">
-              <p>Patagonia, Argentina and Chile</p>
-              <div class="rating"><i class="ri-star-fill"></i> 4.5</div>
-              <div class="booking__price">
-                <div class="price"><span>From</span> $450</div>
-                <button class="book__now">Book Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="trip__card">
-            <img src="assets/trip-3.jpg" alt="trip" />
-            <div class="trip__details">
-              <p>The Dolomites, Italy</p>
-              <div class="rating"><i class="ri-star-fill"></i> 4.7</div>
-              <div class="booking__price">
-                <div class="price"><span>From</span> $400</div>
-                <button class="book__now">Book Now</button>
-              </div>
+
+
+  <section class="best__sellers">
+    <div class="section__container best__sellers__container">
+      <h2 class="section__title">Best Sellers</h2>
+      <p class="section__subtitle">
+        Explore your suitable and dream places around the world. Here you can
+        find your right destination.
+      </p>
+      <div class="best__sellers__grid">
+        <div class="best__sellers__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="best__sellers__details">
+            <p>Product 1</p>
+            <div class="rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="best__sellers__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
             </div>
           </div>
         </div>
-        <div class="view__all">
-          <button class="btn">View All</button>
+        <div class="best__sellers__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="best__sellers__details">
+            <p>Product 1</p>
+            <div class="rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="best__sellers__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>        
+        <div class="best__sellers__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="best__sellers__details">
+            <p>Product 1</p>
+            <div class="rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="best__sellers__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>        
+        <div class="best__sellers__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="best__sellers__details">
+            <p>Product 1</p>
+            <div class="rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="best__sellers__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
         </div>
       </div>
-    </section> -->
+      <div class="view__all">
+        <button class="btn">View All</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="product">
+    <div class="section__container product__container">
+      <h2 class="section__title">Our Producs</h2>
+      <p class="section__subtitle">
+        Explore your suitable and dream places around the world. Here you can
+        find your right destination.
+      </p>
+      <div class="product__single__category">
+      <p class="product__single__category_name">Category 1</p>
+      <div class="product__grid">
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product__single__category">
+      <p class="product__single__category_name">Category 2</p>
+      <div class="product__grid">
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product__single__category">
+      <p class="product__single__category_name">Category 3</p>
+      <div class="product__grid">
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product__single__category">
+      <p class="product__single__category_name">Category 4</p>
+      <div class="product__grid">
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product__single__category">
+      <p class="product__single__category_name">Category 5</p>
+      <div class="product__grid">
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product__single__category">
+      <p class="product__single__category_name">Category 6</p>
+      <div class="product__grid">
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__card">
+          <img src="assets/template400x300.jpg" alt="trip" />
+          <div class="product__details">
+            <p>Product 1</p>
+            <div class="product__rating"><i class="ri-star-fill"></i> 4.5</div>
+            <div class="product__price">
+              <div class="price"><span>From</span> Rs. 300</div>
+              <button class="know__more">Know More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+      <div class="view__all">
+        <button class="btn">View All</button>
+      </div>
+    </div>
+  </section>
+
 
     <section class="gallary">
       <div class="section__container gallary__container">
@@ -376,6 +1262,12 @@
 
 
   </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 
   </body>
 </html>
