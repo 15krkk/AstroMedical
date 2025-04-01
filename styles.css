@@ -1208,6 +1208,10 @@ header.menu-open {
   transition: box-shadow 0.3s ease;
 }
 
+.product__card img {
+  height: 15rem;
+}
+
 .product__card:hover {
   box-shadow: 5px 5px 30px rgba(54, 133, 251, 0.4);
 }
