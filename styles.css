@@ -945,6 +945,7 @@ header.menu-open {
 
 .footer__socials {
   margin-top: 1rem;
+  padding-left: 25px;
 }
 
 .footer__socials a {
