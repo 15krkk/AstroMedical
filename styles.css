@@ -1043,7 +1043,7 @@ header.menu-open {
   color: var(--text-light);
 }
 
-.know__more {
+.buy__now {
   padding: 0.5rem 1.5rem;
   color: var(--primary-color);
   outline: none;
@@ -1054,7 +1054,7 @@ header.menu-open {
   transition: 0.3s;
 }
 
-.know__more:hover {
+.buy__now:hover {
   color: var(--extra-light);
   background-color: var(--primary-color);
 }
@@ -1142,7 +1142,7 @@ header.menu-open {
   color: var(--text-light);
 }
 
-.know__more {
+.buy__now {
   padding: 0.5rem 1.5rem;
   color: var(--primary-color);
   outline: none;
@@ -1153,7 +1153,7 @@ header.menu-open {
   transition: 0.3s;
 }
 
-.know__more:hover {
+.buy__now:hover {
   color: var(--extra-light);
   background-color: var(--primary-color);
 }
@@ -1254,7 +1254,7 @@ header.menu-open {
   color: var(--text-light);
 }
 
-.know__more {
+.buy__now {
   padding: 0.5rem 1.5rem;
   color: var(--primary-color);
   outline: none;
@@ -1265,7 +1265,7 @@ header.menu-open {
   transition: 0.3s;
 }
 
-.know__more:hover {
+.buy__now:hover {
   color: var(--extra-light);
   background-color: var(--primary-color);
 }
